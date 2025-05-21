@@ -1,0 +1,41 @@
+input{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input:focus, textarea:focus{border: 1px solid midnightblue;
+}
+input:invalid, select:invalid, textarea:invalid{
+    border: 1px solid red;
+}
+input:valid, select:valid, textarea:valid{
+    border: 1px solid green
+}
+input:first-of-type{color:red}
+fieldset{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+button{
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: lightblue;
+    color: black;
+}
+.radio-group input[type="radio"]:checked{
+    border: blue;
+    background-color: lightblue;
+    box-shadow: 0 0 5px blue;
+}
+.radio-group input[type="radio"]:checked + label {
+color:blueviolet
+}

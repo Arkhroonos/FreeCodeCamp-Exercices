@@ -1,0 +1,33 @@
+/*display*/
+#playing-cards{display:flex;
+justify-content: center;
+flex-wrap:wrap;
+gap:20px}
+
+/*cards styles*/
+.card{width:500px;
+height:600px;
+background-color:rgb(72, 72, 72);
+display:flex;
+justify-content:space-between;}
+
+.left{align-self:flex-start;
+}
+.middle{align-self:center;
+    flex-direction: column;
+}
+.right{align-self:flex-end;
+}
+
+.left, .middle, .right{
+    width:100px;
+    height:175px;
+    background-color:#2B2B2B;
+    color:whitesmoke;
+    text-align:center;
+    font-size: 2.5rem;
+    align-content: center;
+    margin:25px;
+    border-radius: 10px;
+    border:solid 1px whitesmoke;
+}

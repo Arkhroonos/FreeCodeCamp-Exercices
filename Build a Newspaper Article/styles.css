@@ -1,0 +1,48 @@
+/* Set root font size */
+html {
+  font-size: 24px;
+}
+
+/* Newspaper container styles */
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Newspaper name */
+.name {
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem; /* 2 × root = 48px */
+  text-transform: uppercase;
+}
+
+/* Headline (2× its parent .newspaper = 32px) */
+.headline {
+  font-size: 2em; /* 2 × 16px = 32px */
+  font-weight: bold;
+}
+
+/* Sub-headline (1.5× parent, italic, light) */
+.sub-headline {
+  font-size: 1.5em; /* 1.5 × 16px = 24px */
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Author styling (uppercase + bold) */
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Paragraph body text */
+.text {
+  text-indent: 20px;
+  line-height: 2em; /* 2 × 16px = 32px */
+}
+
+/* First letter styling in paragraphs */
+.text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
