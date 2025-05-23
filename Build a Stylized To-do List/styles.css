@@ -1,6 +1,0 @@
-a{text-decoration: none;}
-.sub-item-link:hover{color:red;}
-.sub-item-link:active{color:green;}
-.sub-item-link:visited{color:brown;}
-.sub-item-link:focus{color:yellow;
-outline: 2px solid purple;}
