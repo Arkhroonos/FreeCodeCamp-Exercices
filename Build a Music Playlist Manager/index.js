@@ -1,0 +1,1 @@
+console.log("🎵 Bienvenue dans le Playlist Manager !");

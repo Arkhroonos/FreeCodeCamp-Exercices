@@ -1,0 +1,12 @@
+{
+  "name": "build-a-music-playlist-manager",
+  "version": "1.0.0",
+  "main": "Music_Manager_Script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

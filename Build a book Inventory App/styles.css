@@ -1,0 +1,86 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+table, th, td {
+  border: 1px solid #0a0000;
+  padding: 2px;
+}
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ✅ Lignes colorées selon statut */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #f0f8ff, #e6e6fa);
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fffacd, #ffe4e1);
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #f5f5dc, #fafad2);
+}
+
+/* ✅ Span visibles */
+span {
+  display: inline-block;
+}
+
+/* ✅ Status et rate (blocs extérieurs) */
+span[class="status"],
+span[class^="rate"] {
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+/* ✅ Apparence des status selon classe de ligne */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #4cf20a;
+  background-image: linear-gradient(to right, #b5ffb5, #d9ffd9);
+}
+tr[class="read"] span[class="status"] {
+  border: 1px solid #00bfff;
+  background-image: linear-gradient(to right, #d0f0ff, #e5f8ff);
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #ffa500;
+  background-image: linear-gradient(to right, #ffe0b3, #fff2cc);
+}
+
+/* ✅ Étoiles internes — adaptation car span internes sans class */
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 60%;
+  margin: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: #f0f8ff;
+}
+
+/* ✅ Étoiles remplies selon note */
+span[class~="one"] > span:nth-child(1) {
+  background-image: linear-gradient(to right, #000000, #020260);
+}
+
+span[class~="two"] > span:nth-child(1),
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(to right, #000000, #020260);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, #000000, #020260);
+}
